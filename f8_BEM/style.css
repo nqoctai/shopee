@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue";
+    background-color: #f4f4f5;
+  }
+body > div{
+    margin: auto;
+}
+.btn{
+    display: inline-block;
+    color: white;
+    padding: 12px 48px;
+    border-radius: 50px;  /* be  goc vuong */
+    cursor: pointer; /* thay doi tro chuot */
+    transition: opacity 0.2s ease;
+}
+.btn:hover{
+    opacity: 0.8; /* lam mo */
+}
+.btn + .btn{
+    margin-left: 16px;
+}
+.btn--success{
+    background-color: #71be34;
+
+}
+
+.btn--warn{
+    background-color: #ffb702;
+}
+
+.btn--danger{
+    background-color: #ff623d;
+}
